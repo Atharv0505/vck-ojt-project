@@ -2,6 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../pages/Admissions.jsx';
 
+const cellstyle = {
+  border: '2px solid black',
+  padding: '12px',
+  textAlign: 'left'
+};
+
 const AdmissionsPage = () => {
   return (
     <div className="content">
@@ -18,33 +24,33 @@ const AdmissionsPage = () => {
         </p>
 
         <h2>Eligibility Criteria for Undergraduate Programs</h2>
-        <table className="admissions-table">
+        <table style={cellstyle} className="admissions-table">
           <thead>
             <tr>
-              <th>Program</th>
-              <th>Minimum Qualification</th>
-              <th>Required Subjects</th>
-              <th>Minimum Marks (%)</th>
+              <th style={cellstyle}>Program</th>
+              <th style={cellstyle}>Minimum Qualification</th>
+              <th style={cellstyle}>Required Subjects</th>
+              <th style={cellstyle}>Minimum Marks (%)</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>B.Sc. Computer Science</td>
-              <td>10+2 (or equivalent)</td>
-              <td>Physics, Chemistry, Maths</td>
-              <td>50%</td>
+              <td style={cellstyle}>B.Sc. Computer Science</td>
+              <td style={cellstyle}>10+2 (or equivalent)</td>
+              <td style={cellstyle}>Physics, Chemistry, Maths</td>
+              <td style={cellstyle}>50%</td>
             </tr>
             <tr>
-              <td>B.Com. Accounting &amp; Finance</td>
-              <td>10+2 (or equivalent)</td>
-              <td>Commerce Stream</td>
-              <td>45%</td>
+              <td style={cellstyle}>B.Com. Accounting &amp; Finance</td>
+              <td style={cellstyle}>10+2 (or equivalent)</td>
+              <td style={cellstyle}>Commerce Stream</td>
+              <td style={cellstyle}>45%</td>
             </tr>
             <tr>
-              <td>B.A. English Literature</td>
-              <td>10+2 (or equivalent)</td>
-              <td>Any Stream</td>
-              <td>40%</td>
+              <td style={cellstyle}>B.A. English Literature</td>
+              <td style={cellstyle}>10+2 (or equivalent)</td>
+              <td style={cellstyle}>Any Stream</td>
+              <td style={cellstyle}>40%</td>
             </tr>
           </tbody>
         </table>

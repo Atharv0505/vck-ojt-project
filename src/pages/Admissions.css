@@ -48,7 +48,7 @@ ol li {
 
 .admissions-table th,
 .admissions-table td {
-  border: 1px solid #ccc;
+  border: 2px solid black;
   padding: 12px;
   text-align: left;
 }
