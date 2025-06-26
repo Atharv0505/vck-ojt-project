@@ -1,20 +1,21 @@
-import React from 'react';
-
 import { Link } from 'react-router-dom';
 import './Home.css'; // Make sure to include this CSS file
 
 const Home = () => {
   return (
     <div className="content">
-      <div style={{ marginTop: "50px", maxHeight: '84vh' }} className="page-container ">
+      <div style={{marginTop:'60px',maxHeight:'76vh'}} className="page-container ">
         <div className="hero-section">
-          <div className="hero-image-container">
-            <img alt="vivekanand college campus" className="hero-banner-image" src="/images/vck.jpeg"></img>
-          </div>
+          <img src="/images/vck.jpeg"
+           alt="" 
+           className="hero-banner-image"
+           />
           <div className="hero-overlay-text ">
-            <h1 className='animate-fade-in-up' style={{color:'white'}}>Welcome to Vivekanand College!</h1>
-            <p className="hero-subtext">Your journey to excellence starts here</p>
-            <Link className="hero-btn" to="/admissions" data-discover="true">Apply Now</Link>
+            <h1 style={{color:'white'}} className=''>Welcome to Vivekanand College!</h1>
+            <p>Your journey to excellence starts here.</p>
+            <Link className="btn bg-success hero-btn" to="/admissions" data-discover="true">
+              Apply Now!
+            </Link>
           </div>
         </div>
 
@@ -43,8 +44,8 @@ const Home = () => {
 
         <h2>Campus Life & Facilities</h2>
         <div className="image-gallery">
-          <img alt="Students studying in library" src="https://vck-ojt.vercel.app/assets/students-studying-DbLGuwF_.jpeg" />
-          <img alt="Students on campus ground" src="https://vck-ojt.vercel.app/assets/campus-life-Crkero7B.jpg" />
+          <img alt="Students studying in library" src="/images/college2.jpeg" />
+          <img alt="Students on campus ground" src="/images/vck1.jpg" />
         </div>
 
         <p>

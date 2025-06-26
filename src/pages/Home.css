@@ -1,40 +1,35 @@
-.page-container {
-  background-color: #ffff;
-  max-width: 1000px;
-  margin: 0 auto;
+.content {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+ background-color: #52d2d2;
+  color: #333;
+  
+}
 
+.page-container {
+background-color: #ffff;
+  max-width: 1000px;
+  margin: 0  auto;
+   max-height: 150vh; /* or set a fixed height like 600px */
   overflow-y: auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-
 .hero-section {
   position: relative;
   width: 100%;
-  height: 350px;
+  height: 300px;
   overflow: hidden;
-  margin-bottom: 40px;
   border-radius: 8px;
-}
-
-.hero-image-container {
-  width: 100%;
-  height: 500px;
-
+  margin-bottom: 10px;
 }
 
 .hero-banner-image {
   width: 100%;
   height: 100%;
-  object-fit:fill;
-  object-position: center center;
+  object-fit: fill;
+  display: block;
   filter: brightness(60%);
-  transition: transform 0.5s ease;
-}
-
-.hero-section:hover .hero-banner-image {
-  transform: scale(1.02);
-
 }
 
 .hero-overlay-text {
@@ -42,113 +37,85 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
+  color: white;
   text-align: center;
   width: 90%;
-  max-width: 800px;
-  padding: 20px;
-}
+  /* Ensure text doesn't hit edges */
 
-@media (max-width: 768px) {
-  .hero-image-container {
-    height: 300px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-image-container {
-    height: 250px;
-  }
-}
-
-
-
-.hero-overlay-text h1{
-  font-size: 3rem;
-}
-.hero-overlay-text p {
-  font-size: 1rem;
-}
-
-.image-gallery img {
-  max-width: 100%;
-  width: 100%;
-  flex: 1 1 100%;
+  
 }
 
 .hero-btn {
-  background-color: green;        
-  color: white;                   
-  padding: 10px 20px;           
-  border: none;                   
-  border-radius: 8px;           
-  font-weight: bold;              
-  cursor: pointer;                
-  transition: background 0.3s;   
+  background-color: #007bff;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .hero-btn:hover {
-  background-color: darkgreen;  
+  background-color: #0056b3;
 }
 
-/* Responsive layout */
-@media (min-width: 600px) {
-  .image-gallery img {
-    flex: 1 1 48%;
-  }
+ul {
+  padding-left: 20px;
 }
 
-@media (max-width: 768px) {
-  .hero-overlay-text h1 {
-    font-size: 1.5rem;
-  }
-
-  .hero-overlay-text p,
-  .call-to-action p {
-    font-size: 0.95rem;
-  }
-
-  .hero-btn {
-  background-color: green;      
-  color: white;                  
-  padding: 10px 20px;           
-  border: none;                 
-  border-radius: 8px;          
-  font-weight: bold;           
-  cursor: pointer;               
-  transition: background 0.3s;    
+ul li {
+  margin-bottom: 10px;
 }
 
-.hero-btn:hover {
-  background-color: darkgreen;   
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* Responsive grid */
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-  .page-container {
-    padding: 10px;
-  }
+.image-gallery img {
+  width: 100%;
+  height: 200px;
+  /* Fixed height for consistency */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  /* Smooth hover effect */
+
+}
+.image-gallery img:hover {
+  transform: scale(1.03);
+  /* Slightly enlarge on hover */
 }
 
 
-@media (max-width: 480px) {
-  ul li {
-    font-size: 14px;
-  }
 
-  .hero-overlay-text h1 {
-    font-size: 1.3rem;
-  }
 
-  .hero-overlay-text p {
-    font-size: 0.9rem;
-  }
 
-  .call-to-action .btn {
-    font-size: 14px;
-    padding: 10px 16px;
-  }
+.call-to-action {
+  text-align: center;
+  margin-top: 40px;
 }
 
+.call-to-action .btn {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
 
+.call-to-action .btn:hover {
+  background-color: #218838;
+}
+/* fghj */
 .animate-fade-in-up {
   animation: fadeInUp 1s ease-out both;
 }
