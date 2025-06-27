@@ -10,9 +10,25 @@ import Navbar from './components/Header/Navbar1';
 import Footer1 from './components/Footer/Footer1';
 import AdmissionsPage from './pages/Admissions';
 import ChatbotComponent from './components/Chatbot/ChatbotComponent';
+import DeveloperInfoPopup from './components/DeveloperInfo/DeveloperInfoPopup';
+import { useState } from 'react';
 function App() {
+  const [showPopup, setShowPopup] = useState(true);
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
   return (
     <>
+    <div>
+        {/* Your main application content */}
+        <DeveloperInfoPopup
+          show={showPopup}
+          onClose={handleClosePopup}
+          studentName="Atharv Desai"
+          studentPhotoUrl="/images/a2.jpg" // Path to their photo
+          uniqueMessage="Learned so much during this OJT! This app showcases my independent coding and deployment skills"
+        />
+      </div>
     <Router>
       <Navbar />
       <Routes>
